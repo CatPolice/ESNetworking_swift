@@ -14,7 +14,7 @@ import Alamofire
 class ESNetworking: NSObject {
     
     /// 是否打印日志
-    static var enableLog: Bool = false
+    public static var enableLog: Bool = false
     
     /// headers 转成 HTTPHeaders
     /// - Parameter headers: headers
@@ -78,7 +78,7 @@ class ESNetworking: NSObject {
     ///   - headers: 请求头
     ///   - success: 成功回调
     ///   - fail: 失败回调
-    static func get(url: String,
+    public static func get(url: String,
                     params: [String: Any]?,
                     headers: [String: String]?,
                     success: @escaping ([String: Any]) -> Void,
@@ -118,7 +118,7 @@ class ESNetworking: NSObject {
      ///   - headers: 请求头
      ///   - success: 成功回调
      ///   - fail: 失败回调
-     static func post(url: String,
+     public static func post(url: String,
                       params: [String: Any]?,
                       headers: [String: String]?,
                       success: @escaping ([String: Any]) -> Void,
@@ -158,7 +158,7 @@ class ESNetworking: NSObject {
     ///   - headers: 请求头
     ///   - success: 成功回调
     ///   - fail: 失败回调
-    static func delete(url: String,
+    public static func delete(url: String,
                         params: [String: Any]?,
                         headers: [String: String]?,
                         success: @escaping ([String: Any]) -> Void,
@@ -195,7 +195,7 @@ class ESNetworking: NSObject {
     ///   - headers: 请求头
     ///   - success: 成功回调
     ///   - fail: 失败回调
-     static func put(url: String,
+     public static func put(url: String,
                      params: [String: Any]?,
                      headers: [String: String]?,
                      success: @escaping ([String: Any]) -> Void,
@@ -232,7 +232,7 @@ class ESNetworking: NSObject {
     ///   - headers: 请求头
     ///   - success: 成功回调
     ///   - fail: 失败回调
-     static func post_json(url: String,
+    public static func post_json(url: String,
                            params: [String: Any]?,
                            headers: [String: String]?,
                            success: @escaping ([String: Any]) -> Void,
@@ -270,7 +270,7 @@ class ESNetworking: NSObject {
     ///   - headers: 请求头
     ///   - success: 成功回调
     ///   - fail: 失败回调
-     static func put_json(url: String,
+    public static func put_json(url: String,
                           params: [String: Any]?,
                           headers: [String: String]?,
                           success: @escaping ([String: Any]) -> Void,
@@ -310,7 +310,7 @@ class ESNetworking: NSObject {
     ///   - headers: 请求头
     ///   - success: 成功回调
     ///   - fail: 失败回调
-     static func upload(url: String,
+    public static func upload(url: String,
                         image: UIImage,
                         name: String,
                         key: String,
