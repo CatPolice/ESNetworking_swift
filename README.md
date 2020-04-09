@@ -1,0 +1,2 @@
+# ESNetworking_swift
+基于Alamofire二次封装的网络请求swift版
