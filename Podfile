@@ -10,6 +10,6 @@ target 'ESNetworking_swift' do
   use_frameworks!
 
   # Pods for ESNetworking_swift
-  pod 'Alamofire', '5.1.0'
+  pod 'Alamofire', '~> 5.1.0'
 
 end
