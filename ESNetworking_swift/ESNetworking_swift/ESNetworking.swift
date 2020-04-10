@@ -11,7 +11,7 @@ import Alamofire
 
 //https://www.jianshu.com/p/4381fe8e10b6
 
-class ESNetworking: NSObject {
+public class ESNetworking: NSObject {
     
     /// 是否打印日志
     public static var enableLog: Bool = false
